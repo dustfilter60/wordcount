@@ -1,0 +1,19 @@
+<h1>COUNT</h1>
+
+<a href="{%url 'home'%}">Start Again</a>
+
+<h1>There are {{n_words}} words in your text</h1>
+
+<h1>Your text:</h1>
+
+{{fulltext}}
+
+<h1>Word count:</h1>
+
+{%for word, total_count in dictionary%}
+
+{{word}}: {{total_count}}
+<br />
+{%endfor%}
+
+<a href="{%url 'about_me'%}">About me</a>

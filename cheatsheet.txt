@@ -1,0 +1,20 @@
+# create new project
+django-admin startproject projectname
+
+# add an app to the project
+python3 manage.py startapp appname
+
+# start the server
+python3 manage.py runserver
+
+# creating migrations
+python3 manage.py makemigrations
+
+# migrate the database
+python3 manage.py migrate
+
+# create a superuser for the admin panel
+python3 manage.py createsuperuser
+
+# collect static files into one folder
+python3 manage.py collectstatic
